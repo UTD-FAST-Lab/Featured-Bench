@@ -26,8 +26,6 @@ void equalError(unsigned hash)
                                         if (hash < 1)
                                         {
                                             printf("this is branch 0\n");
-                                            // int *ptr = NULL;
-                                            // *ptr = 10;
                                         }
                                         else
                                         {
@@ -194,8 +192,6 @@ void equalError(unsigned hash)
                                         else
                                         {
                                             printf("this is branch 25\n");
-                                            int *ptr = NULL;
-                                            *ptr = 10;
                                         }
                                     }
                                     else
@@ -251,8 +247,6 @@ void equalError(unsigned hash)
                                         if (hash < 33)
                                         {
                                             printf("this is branch 32\n");
-                                            // int *ptr = NULL;
-                                            // *ptr = 10;
                                         }
                                         else
                                         {
@@ -373,8 +367,6 @@ void equalError(unsigned hash)
                                         if (hash < 51)
                                         {
                                             printf("this is branch 50\n");
-                                            // int *ptr = NULL;
-                                            // *ptr = 10;
                                         }
                                         else
                                         {
@@ -764,8 +756,6 @@ void equalError(unsigned hash)
                                         if (hash < 107)
                                         {
                                             printf("this is branch 106\n");
-                                            // int *ptr = NULL;
-                                            // *ptr = 10;
                                         }
                                         else
                                         {
@@ -1299,8 +1289,6 @@ void equalError(unsigned hash)
                                         else
                                         {
                                             printf("this is branch 183\n");
-                                            // int *ptr = NULL;
-                                            // *ptr = 10;
                                         }
                                     }
                                 }
@@ -1993,6 +1981,8 @@ void equalError(unsigned hash)
                                         else
                                         {
                                             printf("this is branch 281\n");
+                                            int *ptr = NULL;
+                                            *ptr = 10;
                                         }
                                     }
                                     else
@@ -3821,8 +3811,6 @@ void equalError(unsigned hash)
                                         else
                                         {
                                             printf("this is branch 543\n");
-                                            // int *ptr = NULL;
-                                            // *ptr = 10;
                                         }
                                     }
                                 }
@@ -6238,6 +6226,8 @@ void equalError(unsigned hash)
                                         if (hash < 889)
                                         {
                                             printf("this is branch 888\n");
+                                            // int *ptr = NULL;
+                                            // *ptr =10;
                                         }
                                         else
                                         {
@@ -6423,8 +6413,6 @@ void equalError(unsigned hash)
                                         if (hash < 915)
                                         {
                                             printf("this is branch 914\n");
-                                            // int *ptr = NULL;
-                                            // *ptr = 10;
                                         }
                                         else
                                         {
