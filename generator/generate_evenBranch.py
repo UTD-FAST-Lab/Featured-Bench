@@ -15,5 +15,5 @@ def generate_if(f, i, depth, interval, left=True):
 
 if __name__ == '__main__':
   with open('generated_test.c', 'w+') as f:
-    depth = 7
+    depth = 10
     generate_if(f, 0, depth, (0, 1 << depth))
