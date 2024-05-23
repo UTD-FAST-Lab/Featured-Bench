@@ -9,8 +9,8 @@ import argparse
 import re
 import json
 
-CORPUS_DIR = './output/'
-EXPERIMENT_DATA_STORE = './experiment-data'
+CORPUS_DIR = '../../results/raw-data/deep'
+EXPERIMENT_DATA_STORE = '../../results/experiment-data/deep'
 power_schedules = ['fast', 'coe', 'explore', 'quad', 'lin', 'exploit']
 
 def read_env(config):
@@ -48,17 +48,17 @@ def parse_log(out_str):
 def fuzz_target(selected_schedules, instrument=False):
   logging.basicConfig(level=logging.DEBUG)
 
-  runs = 10
+  runs = 500
 
   envs = os.environ.copy()
 
   if os.path.exists(EXPERIMENT_DATA_STORE):
     shutil.rmtree(EXPERIMENT_DATA_STORE)
-  os.mkdir(EXPERIMENT_DATA_STORE)
+  os.makedirs(EXPERIMENT_DATA_STORE)
   
   if os.path.exists(CORPUS_DIR):
     shutil.rmtree(CORPUS_DIR)
-  os.mkdir(CORPUS_DIR)
+  os.makedirs(CORPUS_DIR)
 
   for p in selected_schedules:
     logging.info(f'fuzzing with power schedule {p}')
@@ -68,11 +68,11 @@ def fuzz_target(selected_schedules, instrument=False):
     raw_data_store = os.path.join(power_data_store, 'raw_data')
     os.mkdir(raw_data_store)
     
-    log_interval = runs / 10
+    log_interval = runs / 500
     for i in range(runs):
       if i % log_interval == 0:
         logging.info(f'finished {i}/{runs} fuzzing runs')
-        corpus = f'{CORPUS_DIR}{p}{i}'
+        corpus = os.path.join(CORPUS_DIR, f'{p}{i}')
         args = ['/AFLplusplus/afl-fuzz', 
         '-p', p,
         '-i', '../seeds', '-o', corpus, 
