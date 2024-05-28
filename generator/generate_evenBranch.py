@@ -14,6 +14,6 @@ def generate_if(f, i, depth, interval, left=True):
   f.write(f'{" " * i * 4}}}\n')
 
 if __name__ == '__main__':
-  with open('generated_test.c', 'w+') as f:
+  with open('generated_even.c', 'w+') as f:
     depth = 10
     generate_if(f, 0, depth, (0, 1 << depth))
