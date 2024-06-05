@@ -6,11 +6,13 @@
 void loopError(unsigned hash)
 {
     for (unsigned int i = 0; i < hash; i++) {
-        printf("this is branch %d\n", i);
-        if (i > 512) {
+        if (i == 59) {
+            printf("this is branch %d\n", i);
             int *p = NULL;
             *p = 10; 
-        }
+        } else {
+            printf("this is branch %d\n", i);
+        } 
     }
 }
 

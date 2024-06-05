@@ -16,8 +16,8 @@ def ttest(file_path):
     ]
     results = []
     for col1, col2 in columns_pairs:
-        filtered_data_1 = [val for val in data[col1]]
-        filtered_data_2 = [val for val in data[col2]]
+        filtered_data_1 = [val for val in data[col1] if val != 0]
+        filtered_data_2 = [val for val in data[col2] if val != 0]
         t_stat, p_value = ttest_ind(filtered_data_1, filtered_data_2)
         results.append((col1, col2, t_stat, p_value))
 
@@ -34,10 +34,10 @@ def box_plot(file_path):
         filtered_col = data_set[col][data_set[col] != 0]
         filtered_data[col] = filtered_col
         
-    print(data_set)
+    print(filtered_data)
     
     plt.figure(figsize=(12, 8))
-    data_set.boxplot(column=columns)
+    filtered_data.boxplot(column=columns)
     plt.title('Box plot of the different power schedules')
     plt.ylabel('# of mutations')
     plt.xticks(rotation=45)
@@ -45,7 +45,7 @@ def box_plot(file_path):
     plt.show()    
     
 def main():
-    file_path = 'agrregate_deep.csv'
+    file_path = 'agrregate_datadeps.csv'
     ttest(file_path)
     box_plot(file_path)
 
