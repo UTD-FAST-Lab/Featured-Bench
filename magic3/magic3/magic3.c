@@ -8,8 +8,6 @@ void magicError(unsigned hash)
     if (hash < 1)
     {
         printf("this is branch 1\n");
-        int *ptr = NULL;
-        *ptr = 30;
     }
     if (hash < 2)
     {
@@ -86,6 +84,8 @@ void magicError(unsigned hash)
     if (hash < 524288)
     {
         printf("this is branch 20\n");
+        int *ptr = NULL;
+        *ptr = 30;
     }
 }
 

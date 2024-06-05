@@ -1,5 +1,5 @@
-CC = /AFLplusplus/afl-clang-fast 
-CXX = /AFLplusplus/afl-clang-fast++
+CC = /AFLplusplus/afl-cc 
+CXX = /AFLplusplus/afl-cc++
 
 all: loop getHash
 
