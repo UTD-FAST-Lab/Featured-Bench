@@ -1,6 +1,3 @@
-CC = /AFLplusplus/afl-clang-fast 
-CXX = /AFLplusplus/afl-clang-fast++
-
 all: dataDeps2 getHash
 
 getHash:

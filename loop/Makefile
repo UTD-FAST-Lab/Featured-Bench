@@ -1,6 +1,3 @@
-CC = /AFLplusplus/afl-cc 
-CXX = /AFLplusplus/afl-cc++
-
 all: loop getHash
 
 getHash:

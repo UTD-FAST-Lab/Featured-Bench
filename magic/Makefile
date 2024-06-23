@@ -1,6 +1,3 @@
-CC = ../../CDFuzz/afl-clang-fast 
-CXX = ../../CDFuzz/afl-clang-fast++
-
 all: magic getHash
 
 getHash:
