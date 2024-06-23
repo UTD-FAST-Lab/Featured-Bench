@@ -34,7 +34,7 @@ void callDepsError(unsigned hash) {
     result = step1(hash);
     
     printf("result: %d\n", result);
-    if (result < 100000) {
+    if (result > 262170) {
         printf("Error: there is a crash\n");
         int *ptr = NULL;
         *ptr = 30;
