@@ -1,11 +1,11 @@
-all: dataDeps2 getHash
+all: dataDeps getHash
 
 getHash:
 	echo $(CC)
 	$(CC) $(CFLAGS) -c getHash.c -o getHash.o
-dataDeps2: getHash
-	$(CC) $(CFLAGS) dataDeps2.c getHash.o -o dataDeps2
+dataDeps: getHash
+	$(CC) $(CFLAGS) dataDeps.c getHash.o -o dataDeps
 
 
 clean:
-	rm dataDeps2 getHash.o
+	rm dataDeps getHash.o

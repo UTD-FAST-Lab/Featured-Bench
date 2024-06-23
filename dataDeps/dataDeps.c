@@ -50,10 +50,13 @@ void dataDepsError(unsigned hash) {
     result = step19(result);
     result = step20(result);
 
+    printf("hash: %u\n", result);
     if (result < 32) {
         printf("Error: hash is 0\n");
         int *ptr = NULL;
         *ptr = 30;
+    } else {
+        printf("No crash\n at %u", result);
     }
 }
 

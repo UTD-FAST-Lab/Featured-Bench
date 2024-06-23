@@ -4,16 +4,22 @@
 #include "getHash.h"
 
 void recursiveError(unsigned hash)
-{
-    if (hash < 16)
+{   
+    printf("Recursion depth: %d\n", hash);
+    if (hash == 16)
     {
-        printf("Recursion depth: %d\n", hash);
-        recursiveError(hash + 1);
+        int *ptr = NULL;
+        *ptr = 10;
+        printf("Error: there is a crash\n");
+    }
+    else if (hash == 0)
+    {
+        printf("No crash\n");
     }
     else
     {
-        int *ptr = NULL;
-        *ptr = 10; 
+        printf("Recursion depth: %d\n", hash);
+        recursiveError(hash - 1);
     }
 }
 
