@@ -5,10 +5,10 @@
 
 void recursiveError(unsigned hash)
 {
-    if (hash > 0)
+    if (hash < 16)
     {
         printf("Recursion depth: %d\n", hash);
-        recursiveError(hash - 1);
+        recursiveError(hash + 1);
     }
     else
     {

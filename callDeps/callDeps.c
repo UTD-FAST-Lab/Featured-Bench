@@ -32,11 +32,15 @@ void callDepsError(unsigned hash) {
     unsigned result;
 
     result = step1(hash);
-
-    if (result < 128) {
+    
+    printf("result: %d\n", result);
+    if (result < 100000) {
         printf("Error: there is a crash\n");
         int *ptr = NULL;
         *ptr = 30;
+    } else {
+        printf("No crash\n at %d", result);
+    
     }
 }
 

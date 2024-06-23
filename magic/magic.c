@@ -87,48 +87,6 @@ void magicError(unsigned hash)
         int *ptr = NULL;
         *ptr = 30;
     }
-    // if (hash == 1048576)
-    // {
-    //     printf("this is branch 21\n");
-    // }
-    // if (hash == 2097152)
-    // {
-    //     printf("this is branch 22\n");
-    // }
-    // if (hash == 4194304)
-    // {
-    //     printf("this is branch 23\n");
-    // }
-    // if (hash == 8388608)
-    // {
-    //     printf("this is branch 24\n");
-    // }
-    // if (hash == 16777216)
-    // {
-    //     printf("this is branch 25\n");
-    // }
-    // if (hash == 33554432)
-    // {
-    //     printf("this is branch 26\n");
-    // }
-    // if (hash == 67108864)
-    // {
-    //     printf("this is branch 27\n");
-    // }
-    // if (hash == 134217728)
-    // {
-    //     printf("this is branch 28\n");
-    // }
-    // if (hash == 268435456)
-    // {
-    //     printf("this is branch 29\n");
-    // }
-    // if (hash == 536870912)
-    // {
-    //     printf("this is branch 30\n");
-    //     int *ptr = NULL;
-    //     *ptr = 30;
-    // }
 }
 
 int main(int argc, char *argv[])
