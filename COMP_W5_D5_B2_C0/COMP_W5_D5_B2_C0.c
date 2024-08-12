@@ -123,10 +123,10 @@ if (hash % 5 == 0) {
                     }
                 } else {
                     if (hash < 31) {
-                        printf("this is branch 30\n");
-                    } else {
                         int *ptr = NULL;
                         *ptr = 10;
+                        printf("this is branch 30\n");
+                    } else {
                         printf("this is branch 31\n");
                     }
                 }

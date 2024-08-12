@@ -4080,6 +4080,8 @@ if (hash % 10 == 0) {
                                 } else {
                                     if (hash < 1022) {
                                         if (hash < 1021) {
+                                            int *ptr = NULL;
+                                            *ptr = 10;
                                             printf("this is branch 1020\n");
                                         } else {
                                             printf("this is branch 1021\n");
@@ -4088,8 +4090,6 @@ if (hash % 10 == 0) {
                                         if (hash < 1023) {
                                             printf("this is branch 1022\n");
                                         } else {
-                                            int *ptr = NULL;
-                                            *ptr = 10;
                                             printf("this is branch 1023\n");
                                         }
                                     }
