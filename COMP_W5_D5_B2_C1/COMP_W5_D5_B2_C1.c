@@ -11,6 +11,8 @@ if (hash % 5 == 0) {
             if (hash < 4) {
                 if (hash < 2) {
                     if (hash < 1) {
+                        int *ptr = NULL;
+                        *ptr = 10;
                         printf("this is branch 0\n");
                     } else {
                         printf("this is branch 1\n");
@@ -123,8 +125,6 @@ if (hash % 5 == 0) {
                     }
                 } else {
                     if (hash < 31) {
-                        int *ptr = NULL;
-                        *ptr = 10;
                         printf("this is branch 30\n");
                     } else {
                         printf("this is branch 31\n");
