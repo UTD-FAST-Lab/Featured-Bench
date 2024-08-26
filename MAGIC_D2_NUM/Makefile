@@ -1,0 +1,7 @@
+all: MAGIC_D2_NUM
+
+MAGIC_D2_NUM: MAGIC_D2_NUM.c
+	$(CC) $(CFLAGS) MAGIC_D2_NUM.c -o MAGIC_D2_NUM
+
+clean:
+	rm MAGIC_D2_NUM
