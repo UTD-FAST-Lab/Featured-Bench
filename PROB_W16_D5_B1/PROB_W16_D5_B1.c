@@ -3,12 +3,12 @@
 
 #include "getHash.h"
 
-void PROB_W7_D5_B1(unsigned hash)
+void PROB_W16_D5_B1(unsigned hash)
 {
-    if (hash < 2401) {
-        if (hash < 343) {
-            if (hash < 49) {
-                if (hash < 7) {
+    if (hash < 65536) {
+        if (hash < 4096) {
+            if (hash < 256) {
+                if (hash < 16) {
                     if (hash < 1) {
                         int *ptr = NULL;
                         *ptr = 10;
@@ -17,21 +17,21 @@ void PROB_W7_D5_B1(unsigned hash)
                         printf("this is branch 2\n");
                     }
                 } else {
-                    if (hash < 13) {
+                    if (hash < 31) {
                         printf("this is branch 3\n");
                     } else {
                         printf("this is branch 4\n");
                     }
                 }
             } else {
-                if (hash < 91) {
-                    if (hash < 55) {
+                if (hash < 496) {
+                    if (hash < 271) {
                         printf("this is branch 5\n");
                     } else {
                         printf("this is branch 6\n");
                     }
                 } else {
-                    if (hash < 127) {
+                    if (hash < 721) {
                         printf("this is branch 7\n");
                     } else {
                         printf("this is branch 8\n");
@@ -39,29 +39,29 @@ void PROB_W7_D5_B1(unsigned hash)
                 }
             }
         } else {
-            if (hash < 637) {
-                if (hash < 385) {
-                    if (hash < 349) {
+            if (hash < 7936) {
+                if (hash < 4336) {
+                    if (hash < 4111) {
                         printf("this is branch 9\n");
                     } else {
                         printf("this is branch 10\n");
                     }
                 } else {
-                    if (hash < 421) {
+                    if (hash < 4561) {
                         printf("this is branch 11\n");
                     } else {
                         printf("this is branch 12\n");
                     }
                 }
             } else {
-                if (hash < 889) {
-                    if (hash < 673) {
+                if (hash < 11536) {
+                    if (hash < 8161) {
                         printf("this is branch 13\n");
                     } else {
                         printf("this is branch 14\n");
                     }
                 } else {
-                    if (hash < 1105) {
+                    if (hash < 14911) {
                         printf("this is branch 15\n");
                     } else {
                         printf("this is branch 16\n");
@@ -70,30 +70,30 @@ void PROB_W7_D5_B1(unsigned hash)
             }
         }
     } else {
-        if (hash < 4459) {
-            if (hash < 2695) {
-                if (hash < 2443) {
-                    if (hash < 2407) {
+        if (hash < 126976) {
+            if (hash < 69376) {
+                if (hash < 65776) {
+                    if (hash < 65551) {
                         printf("this is branch 17\n");
                     } else {
                         printf("this is branch 18\n");
                     }
                 } else {
-                    if (hash < 2479) {
+                    if (hash < 66001) {
                         printf("this is branch 19\n");
                     } else {
                         printf("this is branch 20\n");
                     }
                 }
             } else {
-                if (hash < 2947) {
-                    if (hash < 2731) {
+                if (hash < 72976) {
+                    if (hash < 69601) {
                         printf("this is branch 21\n");
                     } else {
                         printf("this is branch 22\n");
                     }
                 } else {
-                    if (hash < 3163) {
+                    if (hash < 76351) {
                         printf("this is branch 23\n");
                     } else {
                         printf("this is branch 24\n");
@@ -101,29 +101,29 @@ void PROB_W7_D5_B1(unsigned hash)
                 }
             }
         } else {
-            if (hash < 6223) {
-                if (hash < 4711) {
-                    if (hash < 4495) {
+            if (hash < 184576) {
+                if (hash < 130576) {
+                    if (hash < 127201) {
                         printf("this is branch 25\n");
                     } else {
                         printf("this is branch 26\n");
                     }
                 } else {
-                    if (hash < 4927) {
+                    if (hash < 133951) {
                         printf("this is branch 27\n");
                     } else {
                         printf("this is branch 28\n");
                     }
                 }
             } else {
-                if (hash < 7735) {
-                    if (hash < 6439) {
+                if (hash < 238576) {
+                    if (hash < 187951) {
                         printf("this is branch 29\n");
                     } else {
                         printf("this is branch 30\n");
                     }
                 } else {
-                    if (hash < 9031) {
+                    if (hash < 289201) {
                         printf("this is branch 31\n");
                     } else {
                         printf("this is branch 32\n");
@@ -171,7 +171,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    PROB_W7_D5_B1(getHash(data, size));
+    PROB_W16_D5_B1(getHash(data, size));
 
     free(data);
 

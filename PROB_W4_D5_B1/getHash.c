@@ -11,5 +11,5 @@ getHash(unsigned char *data, long size) {
         printf("hash: %d\n", hash);
     }
     
-    return hash % (int)pow(11, 5);
+    return hash % (int)pow(4, 5);
 }
