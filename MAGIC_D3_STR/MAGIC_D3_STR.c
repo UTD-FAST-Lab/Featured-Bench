@@ -52,42 +52,18 @@ uint16_t u16(const unsigned char *data) {
     return value;
 }
 
-void MAGIC_D15_STR(unsigned char *data, long size)
+void MAGIC_D3_STR(unsigned char *data, long size)
 {
-    if (size < 145) {
+    if (size < 19) {
         printf("File is too small...");
         return;
     }
     if (strncmp((char *)(data + 0), "<!ATTLIST", 9) == 0) {
         if (strncmp((char *)(data + 9), "CDATA", 5) == 0) {
             if (strncmp((char *)(data + 14), "IDREF", 5) == 0) {
-                if (strncmp((char *)(data + 20), "#REQUIRED", 9) == 0) {
-                    if (strncmp((char *)(data + 30), "CDATA", 5) == 0) {
-                        if (strncmp((char *)(data + 36), "NMTOKEN", 7) == 0) {
-                            if (strncmp((char *)(data + 45), "ID", 2) == 0) {
-                                if (strncmp((char *)(data + 50), "ENTITY", 6) == 0) {
-                                    if (strncmp((char *)(data + 58), "NAMESPACE", 9) == 0) {
-                                        if (strncmp((char *)(data + 67), "PUBLIC", 6) == 0) {
-                                            if (strncmp((char *)(data + 114), "IGNORE", 6) == 0) {
-                                                if (strncmp((char *)(data + 120), "!>", 2) == 0) {
-                                                    if (strncmp((char *)(data + 122), "<!DOCTYPE", 9) == 0) {
-                                                        if (strncmp((char *)(data + 135), "HTML", 4) == 0) {
-                                                            if (strncmp((char *)(data + 139), "BUTTON", 6) == 0) {
-                                                                int *ptr = NULL;
-                                                                *ptr = 10;
-                                                                printf("Found magic symbol!");
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                int *ptr = NULL;
+                *ptr = 10;
+                printf("Found magic symbol!");
             }
         }
     } else {
@@ -132,7 +108,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    MAGIC_D15_STR(data, size);
+    MAGIC_D3_STR(data, size);
 
     free(data);
 

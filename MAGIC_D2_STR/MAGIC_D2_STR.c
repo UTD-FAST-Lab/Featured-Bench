@@ -52,45 +52,17 @@ uint16_t u16(const unsigned char *data) {
     return value;
 }
 
-void MAGIC_D16_CHAR(unsigned char *data, long size)
+void MAGIC_D2_STR(unsigned char *data, long size)
 {
-    if (size < 120) {
+    if (size < 14) {
         printf("File is too small...");
         return;
     }
-    if ((data[1]) == '$') {
-        if ((data[6]) == '%') {
-            if ((data[12]) == '^') {
-                if ((data[18]) == '&') {
-                    if ((data[24]) == '*') {
-                        if ((data[30]) == '(') {
-                            if ((data[37]) == ')') {
-                                if ((data[45]) == '+') {
-                                    if ((data[53]) == '-') {
-                                        if ((data[62]) == '=') {
-                                            if ((data[71]) == '[') {
-                                                if ((data[80]) == ']') {
-                                                    if ((data[90]) == '{') {
-                                                        if ((data[100]) == '}') {
-                                                            if ((data[110]) == ';') {
-                                                                if ((data[120]) == ':') {
-                                                                    int *ptr = NULL;
-                                                                    *ptr = 10;
-                                                                    printf("Found magic symbol!");
-                                                                }
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+    if (strncmp((char *)(data + 0), "<!ATTLIST", 9) == 0) {
+        if (strncmp((char *)(data + 9), "CDATA", 5) == 0) {
+            int *ptr = NULL;
+            *ptr = 10;
+            printf("Found magic symbol!");
         }
     } else {
         printf("Not magic symbol, continue...");
@@ -134,7 +106,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    MAGIC_D16_CHAR(data, size);
+    MAGIC_D2_STR(data, size);
 
     free(data);
 
