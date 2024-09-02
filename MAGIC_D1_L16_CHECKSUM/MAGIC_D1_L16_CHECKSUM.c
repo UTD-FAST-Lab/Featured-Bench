@@ -52,20 +52,16 @@ uint16_t u16(const unsigned char *data) {
     return value;
 }
 
-void MAGIC_D3_STR(unsigned char *data, long size)
+void MAGIC_D1_L16_CHECKSUM(unsigned char *data, long size)
 {
-    if (size < 19) {
+    if (size < 16) {
         printf("File is too small...");
         return;
     }
-    if (strncmp((char *)(data + 0), "<!ATTLIST", 9) == 0) {
-        if (strncmp((char *)(data + 9), "CDATA", 5) == 0) {
-            if (strncmp((char *)(data + 14), "IDREF", 5) == 0) {
-                int *ptr = NULL;
-                *ptr = 10;
-                printf("Found magic symbol!");
-            }
-        }
+    if (u64(data) == sum(data+8, 8)) {
+        int *ptr = NULL;
+        *ptr = 10;
+        printf("Found magic symbol!");
     } else {
         printf("Not magic symbol, continue...");
     }
@@ -108,7 +104,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    MAGIC_D3_STR(data, size);
+    MAGIC_D1_L16_CHECKSUM(data, size);
 
     free(data);
 

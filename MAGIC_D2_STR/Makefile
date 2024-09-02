@@ -1,7 +1,0 @@
-all: MAGIC_D2_STR
-
-MAGIC_D2_STR: MAGIC_D2_STR.c
-	$(CC) $(CFLAGS) MAGIC_D2_STR.c -o MAGIC_D2_STR
-
-clean:
-	rm MAGIC_D2_STR

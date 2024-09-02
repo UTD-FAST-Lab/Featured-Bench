@@ -52,22 +52,14 @@ uint16_t u16(const unsigned char *data) {
     return value;
 }
 
-void MAGIC_D2_NUM(unsigned char *data, long size)
+void MAGIC_D2_L32_CHECKSUM(unsigned char *data, long size)
 {
-    if (size < 9) {
+    if (size < 32) {
         printf("File is too small...");
         return;
     }
-    unsigned int target_bytes_0 = 0;
-    for (long i = 0; i < 4; ++i) {
-        target_bytes_0 |= data[0+i] << (8*(4-i-1));
-    }
-    unsigned int target_bytes_1 = 0;
-    for (long i = 0; i < 4; ++i) {
-        target_bytes_1 |= data[5+i] << (8*(4-i-1));
-    }
-    if (target_bytes_0 == 0x25504446) {
-        if (target_bytes_1 == 0xDEADBEEF) {
+    if (u64(data) == sum(data+8, 8)) {
+        if (u64(data+16) == sum(data+24, 8)) {
             int *ptr = NULL;
             *ptr = 10;
             printf("Found magic symbol!");
@@ -114,7 +106,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    MAGIC_D2_NUM(data, size);
+    MAGIC_D2_L32_CHECKSUM(data, size);
 
     free(data);
 
