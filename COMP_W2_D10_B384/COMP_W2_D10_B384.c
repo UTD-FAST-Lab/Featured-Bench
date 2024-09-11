@@ -1531,9 +1531,9 @@ void COMP_W2_D10_B384(unsigned hash)
                                         if (hash < 383) {
                                             printf("this is branch 383\n");
                                         } else if (hash < 384) {
+                                            printf("this is branch 384\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 384\n");
                                         }
                                     }
                                 }

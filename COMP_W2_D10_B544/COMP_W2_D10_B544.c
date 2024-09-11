@@ -2175,9 +2175,9 @@ void COMP_W2_D10_B544(unsigned hash)
                                         if (hash < 543) {
                                             printf("this is branch 543\n");
                                         } else if (hash < 544) {
+                                            printf("this is branch 544\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 544\n");
                                         }
                                     }
                                 }

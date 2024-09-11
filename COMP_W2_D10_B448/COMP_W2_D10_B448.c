@@ -1787,9 +1787,9 @@ void COMP_W2_D10_B448(unsigned hash)
                                         if (hash < 447) {
                                             printf("this is branch 447\n");
                                         } else if (hash < 448) {
+                                            printf("this is branch 448\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 448\n");
                                         }
                                     }
                                 }

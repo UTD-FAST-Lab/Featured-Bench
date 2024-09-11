@@ -509,9 +509,9 @@ void COMP_W2_D10_B128(unsigned hash)
                                         if (hash < 127) {
                                             printf("this is branch 127\n");
                                         } else if (hash < 128) {
+                                            printf("this is branch 128\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 128\n");
                                         }
                                     }
                                 }

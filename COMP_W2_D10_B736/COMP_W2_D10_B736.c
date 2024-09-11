@@ -2939,9 +2939,9 @@ void COMP_W2_D10_B736(unsigned hash)
                                         if (hash < 735) {
                                             printf("this is branch 735\n");
                                         } else if (hash < 736) {
+                                            printf("this is branch 736\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 736\n");
                                         }
                                     }
                                 }

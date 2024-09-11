@@ -129,9 +129,9 @@ void COMP_W2_D10_B32(unsigned hash)
                                         if (hash < 31) {
                                             printf("this is branch 31\n");
                                         } else if (hash < 32) {
+                                            printf("this is branch 32\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 32\n");
                                         }
                                     }
                                 }

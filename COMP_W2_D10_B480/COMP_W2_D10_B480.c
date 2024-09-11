@@ -1915,9 +1915,9 @@ void COMP_W2_D10_B480(unsigned hash)
                                         if (hash < 479) {
                                             printf("this is branch 479\n");
                                         } else if (hash < 480) {
+                                            printf("this is branch 480\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 480\n");
                                         }
                                     }
                                 }

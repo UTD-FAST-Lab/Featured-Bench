@@ -4087,9 +4087,9 @@ void COMP_W2_D10_B1024(unsigned hash)
                                         if (hash < 1023) {
                                             printf("this is branch 1023\n");
                                         } else if (hash < 1024) {
+                                            printf("this is branch 1024\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 1024\n");
                                         }
                                     }
                                 }

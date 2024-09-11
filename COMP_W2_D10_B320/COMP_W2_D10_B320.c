@@ -1277,9 +1277,9 @@ void COMP_W2_D10_B320(unsigned hash)
                                         if (hash < 319) {
                                             printf("this is branch 319\n");
                                         } else if (hash < 320) {
+                                            printf("this is branch 320\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 320\n");
                                         }
                                     }
                                 }

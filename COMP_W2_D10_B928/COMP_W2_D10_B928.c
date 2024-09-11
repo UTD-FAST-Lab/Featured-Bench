@@ -3707,9 +3707,9 @@ void COMP_W2_D10_B928(unsigned hash)
                                         if (hash < 927) {
                                             printf("this is branch 927\n");
                                         } else if (hash < 928) {
+                                            printf("this is branch 928\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 928\n");
                                         }
                                     }
                                 }

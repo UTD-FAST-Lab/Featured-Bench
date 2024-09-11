@@ -255,9 +255,9 @@ void COMP_W2_D10_B64(unsigned hash)
                                         if (hash < 63) {
                                             printf("this is branch 63\n");
                                         } else if (hash < 64) {
+                                            printf("this is branch 64\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 64\n");
                                         }
                                     }
                                 }

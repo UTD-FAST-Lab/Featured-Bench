@@ -1661,9 +1661,9 @@ void COMP_W2_D10_B416(unsigned hash)
                                         if (hash < 415) {
                                             printf("this is branch 415\n");
                                         } else if (hash < 416) {
+                                            printf("this is branch 416\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 416\n");
                                         }
                                     }
                                 }

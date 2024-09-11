@@ -893,9 +893,9 @@ void COMP_W2_D10_B224(unsigned hash)
                                         if (hash < 223) {
                                             printf("this is branch 223\n");
                                         } else if (hash < 224) {
+                                            printf("this is branch 224\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 224\n");
                                         }
                                     }
                                 }

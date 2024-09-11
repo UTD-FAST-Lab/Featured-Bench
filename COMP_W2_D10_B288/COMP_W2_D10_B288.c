@@ -1151,9 +1151,9 @@ void COMP_W2_D10_B288(unsigned hash)
                                         if (hash < 287) {
                                             printf("this is branch 287\n");
                                         } else if (hash < 288) {
+                                            printf("this is branch 288\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 288\n");
                                         }
                                     }
                                 }

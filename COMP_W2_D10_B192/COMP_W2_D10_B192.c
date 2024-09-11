@@ -765,9 +765,9 @@ void COMP_W2_D10_B192(unsigned hash)
                                         if (hash < 191) {
                                             printf("this is branch 191\n");
                                         } else if (hash < 192) {
+                                            printf("this is branch 192\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 192\n");
                                         }
                                     }
                                 }

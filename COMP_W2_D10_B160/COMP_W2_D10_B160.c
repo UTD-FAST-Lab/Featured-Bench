@@ -639,9 +639,9 @@ void COMP_W2_D10_B160(unsigned hash)
                                         if (hash < 159) {
                                             printf("this is branch 159\n");
                                         } else if (hash < 160) {
+                                            printf("this is branch 160\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 160\n");
                                         }
                                     }
                                 }

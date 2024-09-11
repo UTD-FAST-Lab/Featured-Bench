@@ -2685,9 +2685,9 @@ void COMP_W2_D10_B672(unsigned hash)
                                         if (hash < 671) {
                                             printf("this is branch 671\n");
                                         } else if (hash < 672) {
+                                            printf("this is branch 672\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 672\n");
                                         }
                                     }
                                 }

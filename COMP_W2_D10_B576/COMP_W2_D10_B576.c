@@ -2301,9 +2301,9 @@ void COMP_W2_D10_B576(unsigned hash)
                                         if (hash < 575) {
                                             printf("this is branch 575\n");
                                         } else if (hash < 576) {
+                                            printf("this is branch 576\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 576\n");
                                         }
                                     }
                                 }

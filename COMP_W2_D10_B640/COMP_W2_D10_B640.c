@@ -2555,9 +2555,9 @@ void COMP_W2_D10_B640(unsigned hash)
                                         if (hash < 639) {
                                             printf("this is branch 639\n");
                                         } else if (hash < 640) {
+                                            printf("this is branch 640\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 640\n");
                                         }
                                     }
                                 }

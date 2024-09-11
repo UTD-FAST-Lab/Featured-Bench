@@ -1019,9 +1019,9 @@ void COMP_W2_D10_B256(unsigned hash)
                                         if (hash < 255) {
                                             printf("this is branch 255\n");
                                         } else if (hash < 256) {
+                                            printf("this is branch 256\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 256\n");
                                         }
                                     }
                                 }

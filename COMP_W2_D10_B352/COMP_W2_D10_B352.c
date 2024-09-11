@@ -1405,9 +1405,9 @@ void COMP_W2_D10_B352(unsigned hash)
                                         if (hash < 351) {
                                             printf("this is branch 351\n");
                                         } else if (hash < 352) {
+                                            printf("this is branch 352\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
-                                            printf("this is branch 352\n");
                                         }
                                     }
                                 }
