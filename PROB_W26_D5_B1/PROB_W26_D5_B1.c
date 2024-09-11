@@ -10,9 +10,9 @@ void PROB_W26_D5_B1(unsigned hash)
             if (hash < 676) {
                 if (hash < 26) {
                     if (hash < 1) {
+                        printf("this is branch 1\n");
                         int *ptr = NULL;
                         *ptr = 10;
-                        printf("this is branch 1\n");
                     } else {
                         printf("this is branch 2\n");
                     }

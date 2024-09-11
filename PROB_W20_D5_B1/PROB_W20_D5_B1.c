@@ -10,9 +10,9 @@ void PROB_W20_D5_B1(unsigned hash)
             if (hash < 400) {
                 if (hash < 20) {
                     if (hash < 1) {
+                        printf("this is branch 1\n");
                         int *ptr = NULL;
                         *ptr = 10;
-                        printf("this is branch 1\n");
                     } else {
                         printf("this is branch 2\n");
                     }
