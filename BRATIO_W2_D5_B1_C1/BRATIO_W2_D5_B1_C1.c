@@ -10,9 +10,9 @@ void BRATIO_W2_D5_B1_C1(unsigned hash)
             if (hash < 4) {
                 if (hash < 2) {
                     if (hash < 1) {
+                        printf("this is branch 1\n");
                         int *ptr = NULL;
                         *ptr = 10;
-                        printf("this is branch 1\n");
                     } else if (hash < 2) {
                         printf("this is branch 2\n");
                     }
