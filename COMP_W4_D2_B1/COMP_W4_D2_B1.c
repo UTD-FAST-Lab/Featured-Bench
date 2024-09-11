@@ -7,9 +7,9 @@ void COMP_W4_D2_B1(unsigned hash)
 {
     if (hash < 4) {
         if (hash < 1) {
+            printf("this is branch 1\n");
             int *ptr = NULL;
             *ptr = 10;
-            printf("this is branch 1\n");
         } else if (hash < 2) {
             printf("this is branch 2\n");
         } else if (hash < 3) {
