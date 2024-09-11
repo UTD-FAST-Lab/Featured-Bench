@@ -59,9 +59,9 @@ void MAGIC_D1_L2_STR(unsigned char *data, long size)
         return;
     }
     if (strncmp((char *)(data + 0), "<!", 2) == 0) {
+        printf("Found magic symbol!");
         int *ptr = NULL;
         *ptr = 10;
-        printf("Found magic symbol!");
     } else {
         printf("Not magic symbol, continue...");
     }

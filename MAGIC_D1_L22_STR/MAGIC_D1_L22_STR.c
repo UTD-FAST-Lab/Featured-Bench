@@ -52,18 +52,16 @@ uint16_t u16(const unsigned char *data) {
     return value;
 }
 
-void MAGIC_D2_L10_CHAR(unsigned char *data, long size)
+void MAGIC_D1_L22_STR(unsigned char *data, long size)
 {
-    if (size < 10) {
+    if (size < 22) {
         printf("File is too small...");
         return;
     }
-    if ((data[0]) == '<') {
-        if ((data[10]) == '&') {
-            int *ptr = NULL;
-            *ptr = 10;
-            printf("Found magic symbol!");
-        }
+    if (strncmp((char *)(data + 20), "<!", 2) == 0) {
+        printf("Found magic symbol!");
+        int *ptr = NULL;
+        *ptr = 10;
     } else {
         printf("Not magic symbol, continue...");
     }
@@ -106,7 +104,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    MAGIC_D2_L10_CHAR(data, size);
+    MAGIC_D1_L22_STR(data, size);
 
     free(data);
 
