@@ -3,7 +3,7 @@
 
 #include "getHash.h"
 
-void COMP_W2_D10_B1_L5_2(unsigned hash)
+void LOOP2_W2_D10_B1_L1_1(unsigned hash)
 {
     if (hash < 512) {
         if (hash < 256) {
@@ -15,25 +15,13 @@ void COMP_W2_D10_B1_L5_2(unsigned hash)
                                 if (hash < 4) {
                                     if (hash < 2) {
                                         if (hash < 1) {
+                                            for (unsigned int i = 0; i < 10; i++) {
+                                                printf("this is iteration %d\n", i);
+                                            }
                                             printf("this is branch 1\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
                                         } else if (hash < 2) {
-                                            for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
-                                            }
-                                            for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
-                                            }
-                                            for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
-                                            }
-                                            for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
-                                            }
-                                            for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
-                                            }
                                             printf("this is branch 2\n");
                                         }
                                     } else if (hash < 4) {
@@ -4154,7 +4142,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    COMP_W2_D10_B1_L5_2(getHash(data, size));
+    LOOP2_W2_D10_B1_L1_1(getHash(data, size));
 
     free(data);
 

@@ -3,7 +3,7 @@
 
 #include "getHash.h"
 
-void COMP_W2_D10_B1_L50_2(unsigned hash)
+void LOOP2_W2_D10_B1_L50_2(unsigned hash)
 {
     if (hash < 512) {
         if (hash < 256) {
@@ -20,154 +20,154 @@ void COMP_W2_D10_B1_L50_2(unsigned hash)
                                             *ptr = 10;
                                         } else if (hash < 2) {
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             for (unsigned int i = 0; i < 10; i++) {
-                                                    printf("this is iteration %d\n", i);
+                                                printf("this is iteration %d\n", i);
                                             }
                                             printf("this is branch 2\n");
                                         }
@@ -4289,7 +4289,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    COMP_W2_D10_B1_L50_2(getHash(data, size));
+    LOOP2_W2_D10_B1_L50_2(getHash(data, size));
 
     free(data);
 
