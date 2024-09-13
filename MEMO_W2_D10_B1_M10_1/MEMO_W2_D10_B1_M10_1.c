@@ -1,9 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "getHash.h"
 
-void LOOP2_W2_D10_B1_L10_1(unsigned hash)
+void MEMO_W2_D10_B1_M10_1(unsigned hash)
 {
     if (hash < 512) {
         if (hash < 256) {
@@ -15,36 +16,27 @@ void LOOP2_W2_D10_B1_L10_1(unsigned hash)
                                 if (hash < 4) {
                                     if (hash < 2) {
                                         if (hash < 1) {
-                                            for (unsigned int i = 0; i < 10; i++) {
-                                                printf("this is iteration %d\n", i);
-                                            }
-                                            for (unsigned int i = 0; i < 10; i++) {
-                                                printf("this is iteration %d\n", i);
-                                            }
-                                            for (unsigned int i = 0; i < 10; i++) {
-                                                printf("this is iteration %d\n", i);
-                                            }
-                                            for (unsigned int i = 0; i < 10; i++) {
-                                                printf("this is iteration %d\n", i);
-                                            }
-                                            for (unsigned int i = 0; i < 10; i++) {
-                                                printf("this is iteration %d\n", i);
-                                            }
-                                            for (unsigned int i = 0; i < 10; i++) {
-                                                printf("this is iteration %d\n", i);
-                                            }
-                                            for (unsigned int i = 0; i < 10; i++) {
-                                                printf("this is iteration %d\n", i);
-                                            }
-                                            for (unsigned int i = 0; i < 10; i++) {
-                                                printf("this is iteration %d\n", i);
-                                            }
-                                            for (unsigned int i = 0; i < 10; i++) {
-                                                printf("this is iteration %d\n", i);
-                                            }
-                                            for (unsigned int i = 0; i < 10; i++) {
-                                                printf("this is iteration %d\n", i);
-                                            }
+                                            char *buffer = malloc(20);
+                                            char *buffer1 = malloc(20);
+                                            strcpy(buffer1, "Hello World!");
+                                            char buffer2[15];
+                                            memcpy(buffer2, "1234567890", 10);
+                                            char buffer3[10];
+                                            memset(buffer3, 0, sizeof(buffer3));
+                                            char block1[] = "Hello, World!";
+                                            char block2[] = "Hello, World!";
+                                            memcmp(block1, block2, sizeof(block1));
+                                            char* str1 = "Hello, World!";
+                                            char* str2 = "Hello, World!";
+                                            strncmp(str1, str2, 5);
+                                            int *ptr1 = (int *)malloc(sizeof(int));
+                                            free(ptr1);
+                                            int *ptr2 = (int *)malloc(sizeof(int));
+                                            ptr2 = (int *)realloc(ptr2, sizeof(int) * 10);
+                                            char *buffer4 = malloc(30);
+                                            strcpy(buffer4, "Memory Management");
+                                            char *buffer5 = malloc(50);
+                                            memset(buffer5, 0, 50);
                                             printf("this is branch 1\n");
                                             int *ptr = NULL;
                                             *ptr = 10;
@@ -4169,7 +4161,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    LOOP2_W2_D10_B1_L10_1(getHash(data, size));
+    MEMO_W2_D10_B1_M10_1(getHash(data, size));
 
     free(data);
 
