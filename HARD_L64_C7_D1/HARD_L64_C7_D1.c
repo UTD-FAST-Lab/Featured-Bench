@@ -52,7 +52,7 @@ uint16_t u16(const unsigned char *data) {
     return value;
 }
 
-void HARD_L64_C5_D1(unsigned char *data, long size)
+void HARD_L64_C7_D1(unsigned char *data, long size)
 {
     if (size < 64) {
         printf("File is too small...");
@@ -104,7 +104,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    HARD_L64_C5_D1(data, size);
+    HARD_L64_C7_D1(data, size);
 
     free(data);
 
