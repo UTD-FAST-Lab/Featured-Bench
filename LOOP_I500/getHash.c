@@ -11,5 +11,5 @@ getHash(unsigned char *data, long size) {
         printf("hash: %d\n", hash);
     }
     
-    return hash % 1024;
+    return hash % 65536;
 }

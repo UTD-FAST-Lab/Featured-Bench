@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "getHash.h"
 
-void LOOP_I200_R(unsigned hash)
+void LOOP_I500(unsigned hash)
 {
     for (unsigned int i = 0; i < hash; i++) {
-        if (i == 200) {
+        if (i == 500) {
             printf("this is iteration %d\n", i);
             int *p = NULL;
             *p = 10;
@@ -52,7 +53,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    LOOP_I200_R(getHash(data, size));
+    LOOP_I500(getHash(data, size));
 
     free(data);
 

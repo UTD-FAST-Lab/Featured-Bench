@@ -1,12 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #include "getHash.h"
 
 void LOOP_I1(unsigned hash)
 {
-    for (unsigned int i = 0; i < 1; i++) {
-        if (i == hash) {
+    for (unsigned int i = 0; i < hash; i++) {
+        if (i == 1) {
             printf("this is iteration %d\n", i);
             int *p = NULL;
             *p = 10;
