@@ -1,0 +1,7 @@
+all: RECUR_I450
+
+RECUR_I450: RECUR_I450.c
+	$(CC) $(CFLAGS) RECUR_I450.c -o RECUR_I450
+
+clean:
+	rm RECUR_I450

@@ -1,0 +1,7 @@
+all: RECUR_I400
+
+RECUR_I400: RECUR_I400.c
+	$(CC) $(CFLAGS) RECUR_I400.c -o RECUR_I400
+
+clean:
+	rm RECUR_I400

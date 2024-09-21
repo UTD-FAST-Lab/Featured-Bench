@@ -1,0 +1,7 @@
+all: RECUR_I350
+
+RECUR_I350: RECUR_I350.c
+	$(CC) $(CFLAGS) RECUR_I350.c -o RECUR_I350
+
+clean:
+	rm RECUR_I350
