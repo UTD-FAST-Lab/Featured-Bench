@@ -1,7 +1,11 @@
-all: HARD_L16_C1_D1
+all: HARD_L16_C1_D1 getHash
 
-HARD_L16_C1_D1: HARD_L16_C1_D1.c
-	$(CC) $(CFLAGS) HARD_L16_C1_D1.c -o HARD_L16_C1_D1
+getHash:
+	echo $(CC)
+	$(CC) $(CFLAGS) -c getHash.c -o getHash.o
+HARD_L16_C1_D1: getHash
+	$(CC) $(CFLAGS) HARD_L16_C1_D1.c getHash.o -o HARD_L16_C1_D1
+
 
 clean:
-	rm HARD_L16_C1_D1
+	rm HARD_L16_C1_D1 getHash.o

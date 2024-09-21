@@ -4,13 +4,13 @@
 
 #include "getHash.h"
 
-void HARD_L16_C1_D1(unsigned hash)
+void HARD_L52_C5_D1(unsigned hash)
 {
-    if (size < 16) {
+    if (size < 52) {
         printf("File is too small...");
         return;
     }
-    if (u64(data) == sum(data+8, 8)) {
+    if ((u64(data) == sum(data+8, 8)) && u32(data+16) == average(data+20, 16) && u16(data+36) == product(data+38, 4) && (sum(data+42, 2) == sum(data+44, 2)) && (average(data+46, 4) == average(data+50, 2))) {
         printf("Found magic symbol!");
         int *ptr = NULL;
         *ptr = 10;
@@ -56,7 +56,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    HARD_L16_C1_D1(getHash(data, size));
+    HARD_L52_C5_D1(getHash(data, size));
 
     free(data);
 
