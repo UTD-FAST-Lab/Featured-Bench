@@ -1,10 +1,58 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <stdint.h>
 
-#include "getHash.h"
 
-void HARD_L64_C1_D7(unsigned hash)
+uint64_t sum(const unsigned char *data, size_t length) {
+    uint64_t result = 0;
+    for (size_t i = 0; i < length; i++) {
+        result += data[i];
+    }
+    return result;
+}
+
+uint64_t average(const unsigned char *data, size_t length) {
+    uint64_t total = 0;
+    for (size_t i = 0; i < length; i++) {
+        total += data[i];
+    }
+    return total / length;
+}
+
+uint64_t product(const unsigned char *data, size_t length) {
+    uint64_t result = 1;
+    for (size_t i = 0; i < length; i++) {
+        result *= data[i];
+    }
+    return result;
+}
+
+uint64_t u64(const unsigned char *data) {
+    uint64_t value = 0;
+    for (size_t i = 0; i < 8; i++) {
+        value |= (uint64_t)data[i] << (i * 8);
+    }
+    return value;
+}
+
+uint32_t u32(const unsigned char *data) {
+    uint32_t value = 0;
+    for (size_t i = 0; i < 4; i++) {
+        value |= ((uint32_t)data[i] << (i * 8));
+    }
+    return value;
+}
+
+uint16_t u16(const unsigned char *data) {
+    uint16_t value = 0;
+    for (size_t i = 0; i < 2; i++) {
+        value |= ((uint16_t)data[i] << (i * 8));
+    }
+    return value;
+}
+
+void HARD_L64_C1_D7(unsigned char *data, long size)
 {
     if (size < 64) {
         printf("File is too small...");
@@ -68,7 +116,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    HARD_L64_C1_D7(getHash(data, size));
+    HARD_L64_C1_D7(data, size);
 
     free(data);
 

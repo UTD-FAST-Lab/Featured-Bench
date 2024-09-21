@@ -1,11 +1,7 @@
-all: HARD_L42_C1_D3 getHash
+all: HARD_L42_C1_D3
 
-getHash:
-	echo $(CC)
-	$(CC) $(CFLAGS) -c getHash.c -o getHash.o
-HARD_L42_C1_D3: getHash
-	$(CC) $(CFLAGS) HARD_L42_C1_D3.c getHash.o -o HARD_L42_C1_D3
-
+HARD_L42_C1_D3: HARD_L42_C1_D3.c
+	$(CC) $(CFLAGS) HARD_L42_C1_D3.c -o HARD_L42_C1_D3
 
 clean:
-	rm HARD_L42_C1_D3 getHash.o
+	rm HARD_L42_C1_D3
