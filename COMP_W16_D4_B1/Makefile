@@ -1,0 +1,7 @@
+all: COMP_W16_D4_B1
+
+COMP_W16_D4_B1: getHash
+	$(CC) $(CFLAGS) COMP_W16_D4_B1.c -o COMP_W16_D4_B1
+
+clean:
+	rm COMP_W16_D4_B1
