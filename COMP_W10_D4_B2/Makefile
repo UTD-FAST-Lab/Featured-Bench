@@ -1,0 +1,7 @@
+all: COMP_W10_D4_B2
+
+COMP_W10_D4_B2:
+	$(CC) $(CFLAGS) COMP_W10_D4_B2.c -o COMP_W10_D4_B2
+
+clean:
+	rm COMP_W10_D4_B2

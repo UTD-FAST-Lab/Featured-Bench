@@ -1,7 +1,0 @@
-all: COMP_W2_D6_B1
-
-COMP_W2_D6_B1:
-	$(CC) $(CFLAGS) COMP_W2_D6_B1.c -o COMP_W2_D6_B1
-
-clean:
-	rm COMP_W2_D6_B1
