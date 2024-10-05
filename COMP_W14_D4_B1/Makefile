@@ -1,6 +1,6 @@
 all: COMP_W14_D4_B1
 
-COMP_W14_D4_B1: getHash
+COMP_W14_D4_B1:
 	$(CC) $(CFLAGS) COMP_W14_D4_B1.c -o COMP_W14_D4_B1
 
 clean:
