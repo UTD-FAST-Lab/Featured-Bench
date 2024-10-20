@@ -66,7 +66,7 @@ void RECURD_I450(unsigned char *data, long size, int i)
             int *p = NULL;
             *p = 10;
         }
-        RECUR_I450(data, size, i + 1);
+        RECURD_I450(data, size, i + 1);
     }
 }
 

@@ -66,7 +66,7 @@ void RECURD_I300(unsigned char *data, long size, int i)
             int *p = NULL;
             *p = 10;
         }
-        RECUR_I300(data, size, i + 1);
+        RECURD_I300(data, size, i + 1);
     }
 }
 
