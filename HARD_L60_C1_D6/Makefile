@@ -1,0 +1,7 @@
+all: HARD_L60_C1_D6
+
+HARD_L60_C1_D6: HARD_L60_C1_D6.c
+	$(CC) $(CFLAGS) HARD_L60_C1_D6.c -o HARD_L60_C1_D6
+
+clean:
+	rm HARD_L60_C1_D6

@@ -52,16 +52,30 @@ uint16_t u16(const unsigned char *data) {
     return value;
 }
 
-void HARD_L64_C7_D1(unsigned char *data, long size)
+void HARD_L70_C1_D8(unsigned char *data, long size)
 {
-    if (size < 64) {
+    if (size < 70) {
         printf("File is too small...");
         return;
     }
-    if ((u64(data) == sum(data+8, 8)) && (u32(data+16) == average(data+20, 16)) && (u16(data+36) == product(data+38, 4)) && (sum(data+42, 2) == sum(data+44, 2)) && (average(data+46, 4) == average(data+50, 2)) && (product(data+52, 4) == product(data+56, 4)) && (sum(data+60, 2) == sum(data+62, 2))) {
-        printf("Found magic symbol!");
-        int *ptr = NULL;
-        *ptr = 10;
+    if (u64(data) == sum(data+8, 8)) {
+        if (u32(data+16) == average(data+20, 16)) {
+            if (u16(data+36) == product(data+38, 4)) {
+                if (sum(data+42, 2) == sum(data+44, 2)) {
+                    if (average(data+46, 4) == average(data+50, 2)) {
+                        if (product(data+52, 4) == product(data+56, 4)) {
+                            if (sum(data+60, 2) == sum(data+62, 2)) {
+                                if (average(data+64, 4) == average(data+68, 2)) {
+                                    printf("Found magic symbol!");
+                                    int *ptr = NULL;
+                                    *ptr = 10;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     } else {
         printf("Not magic symbol, continue...");
     }
@@ -104,7 +118,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    HARD_L64_C7_D1(data, size);
+    HARD_L70_C1_D8(data, size);
 
     free(data);
 

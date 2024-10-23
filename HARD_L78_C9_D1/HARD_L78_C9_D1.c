@@ -58,7 +58,7 @@ void HARD_L78_C9_D1(unsigned char *data, long size)
         printf("File is too small...");
         return;
     }
-    if ((u64(data) == sum(data+8, 8)) && u32(data+16) == average(data+20, 16) && u16(data+36) == product(data+38, 4) && (sum(data+42, 2) == sum(data+44, 2)) && (average(data+46, 4) == average(data+50, 2)) && (product(data+52, 4) == product(data+56, 4)) && (sum(data+60, 2) == sum(data+62, 2)) && (average(data+64, 4) == average(data+68, 2)) && (product(data+70, 4) == product(data+74, 4))) {
+    if ((u64(data) == sum(data+8, 8)) && (u32(data+16) == average(data+20, 16)) && (u16(data+36) == product(data+38, 4)) && (sum(data+42, 2) == sum(data+44, 2)) && (average(data+46, 4) == average(data+50, 2)) && (product(data+52, 4) == product(data+56, 4)) && (sum(data+60, 2) == sum(data+62, 2)) && (average(data+64, 4) == average(data+68, 2)) && (product(data+70, 4) == product(data+74, 4))) {
         printf("Found magic symbol!");
         int *ptr = NULL;
         *ptr = 10;

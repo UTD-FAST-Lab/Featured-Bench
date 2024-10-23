@@ -52,13 +52,13 @@ uint16_t u16(const unsigned char *data) {
     return value;
 }
 
-void HARD_L64_C7_D1(unsigned char *data, long size)
+void HARD_L60_C6_D1(unsigned char *data, long size)
 {
-    if (size < 64) {
+    if (size < 60) {
         printf("File is too small...");
         return;
     }
-    if ((u64(data) == sum(data+8, 8)) && (u32(data+16) == average(data+20, 16)) && (u16(data+36) == product(data+38, 4)) && (sum(data+42, 2) == sum(data+44, 2)) && (average(data+46, 4) == average(data+50, 2)) && (product(data+52, 4) == product(data+56, 4)) && (sum(data+60, 2) == sum(data+62, 2))) {
+    if ((u64(data) == sum(data+8, 8)) && (u32(data+16) == average(data+20, 16)) && (u16(data+36) == product(data+38, 4)) && (sum(data+42, 2) == sum(data+44, 2)) && (average(data+46, 4) == average(data+50, 2)) && (product(data+52, 4) == product(data+56, 4))) {
         printf("Found magic symbol!");
         int *ptr = NULL;
         *ptr = 10;
@@ -104,7 +104,7 @@ int main(int argc, char *argv[])
         return 1;
     }
 
-    HARD_L64_C7_D1(data, size);
+    HARD_L60_C6_D1(data, size);
 
     free(data);
 
