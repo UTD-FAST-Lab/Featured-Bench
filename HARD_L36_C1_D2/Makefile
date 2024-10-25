@@ -1,7 +1,0 @@
-all: HARD_L36_C1_D2
-
-HARD_L36_C1_D2: HARD_L36_C1_D2.c
-	$(CC) $(CFLAGS) HARD_L36_C1_D2.c -o HARD_L36_C1_D2
-
-clean:
-	rm HARD_L36_C1_D2

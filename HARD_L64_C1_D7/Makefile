@@ -1,7 +1,0 @@
-all: HARD_L64_C1_D7
-
-HARD_L64_C1_D7: HARD_L64_C1_D7.c
-	$(CC) $(CFLAGS) HARD_L64_C1_D7.c -o HARD_L64_C1_D7
-
-clean:
-	rm HARD_L64_C1_D7

@@ -1,7 +1,0 @@
-all: HARD_L78_C1_D9
-
-HARD_L78_C1_D9: HARD_L78_C1_D9.c
-	$(CC) $(CFLAGS) HARD_L78_C1_D9.c -o HARD_L78_C1_D9
-
-clean:
-	rm HARD_L78_C1_D9
